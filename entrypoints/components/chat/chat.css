@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+:root {
+  --gray-100: rgba(223, 225, 231, 1);
+  --gray-200: rgba(193, 199, 208, 1);
+  --gray-300: rgba(164, 172, 185, 1);
+  --gray-500: #666d80;
+}
+
+.primary-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  text-align: left;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.secondary-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid var(--gray-500);
+  border-radius: 8px;
+  padding: 10px 24px;
+  background-color: #f9fafb;
+  color: var(--gray-500);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+}
+
+.app-icon {
+  position: fixed;
+  transform: translate(-150%, -150%);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.ai-chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 870px;
+  max-width: inherit;
+  max-height: inherit;
+  overflow: auto;
+}
+
+.ai-chat-container .prompt {
+  max-width: 631px;
+  padding: 16px;
+  border-radius: 12px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: var(--gray-500);
+}
+
+.ai-chat-container .prompt.user-prompt {
+  max-width: 100%;
+  background-color: var(--gray-100);
+  align-self: flex-end;
+}
+
+.ai-chat-container .prompt.ai-prompt {
+  background-color: rgba(219, 234, 254, 1);
+}
+
+.ai-chat-container .input-prompt {
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 16px 12px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  text-align: left;
+  color: var(--gray-500);
+  outline: none;
+  height: fit-content;
+}
+
+.ai-chat-container .input-prompt::placeholder {
+  color: var(--gray-300);
+}
+
+.ai-chat-container .buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 26px;
+}
